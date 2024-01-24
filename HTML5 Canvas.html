@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h1> HTML5 Canvas </h1>
+			<canvas id='myCanvas' width='400' height='200' style=
+			'border:1px solid black;' >
+				</canvas>
+				
+			<script>
+				const canvas = document.getElementById('myCanvas')
+				const ctx = canvas.getContext('2d')
+			
+				ctx.beginPath();
+				ctx.moveTo(0,0);
+				ctx.lineTo(200,200);
+				ctx.stroke();
+			
+				ctx.beginPath();
+				ctx.moveTo(200,0);
+				ctx.lineTo(200,200);
+				ctx.lineTo(400,0);
+				ctx.lineTo(350,20);
+				ctx.lineTo(350,180);
+				ctx.lineTo(70,180);
+				ctx.lineTo(70,50);
+				ctx.strokeStyle= 'red';
+				ctx.stroke();
+			</script>
+	</body>
+</html>

@@ -1,0 +1,135 @@
+<!Doctype html>
+<html>
+	<head>
+		<style>
+			canvas {
+			position: absolute;
+			top:150;
+			left:150;
+		</style>
+	</head>
+		
+    <body>
+		<nav style='background-color:gray; text-align:center; font-weight:bold; font-size:150%;'>
+		<a href='Aboutme.html'>About me</a> &nbsp &nbsp &nbsp
+		<a href='Aboutme2ndpage.html'>My Hobbies</a> &nbsp &nbsp &nbsp
+		<a href='projects3.html'>Portoflio</a> &nbsp &nbsp &nbsp
+		<a href='10slidesinfo.html'>Components</a> &nbsp &nbsp &nbsp
+		<a href='contactmepage.html'>Contact</a> &nbsp &nbsp &nbsp 
+		<a href='page6.html'>Favorite things</a> &nbsp &nbsp& &nbsp 
+		</nav> 
+        <h1> HTML5 Canvas </h1>
+        <h2> Project Maze </h2>
+		
+        
+            <canvas id='Project Maze' width='390' height='300' style=
+            'border:5px solid rgb(0, 0, 0);' >
+                </canvas>
+
+            <script>
+                const canvas = document.getElementById('Project Maze')
+                const ctx = canvas.getContext('2d')
+            
+                //1st path
+                ctx.beginPath();
+                ctx.moveTo(75,0);
+                ctx.lineTo(75,75);
+                ctx.strokeStyle= 'black';
+                ctx.stroke();
+                
+                //2nd path
+                ctx.beginPath();
+                ctx.moveTo(200,0);
+                ctx.lineTo(200,75);
+                ctx.strokeStyle= 'black';
+                ctx.stroke();
+            
+                //3rd path
+                ctx.beginPath();
+                ctx.moveTo(75,130);
+                ctx.lineTo(300,130);
+                ctx.strokeStyle= 'black';
+                ctx.stroke();
+				
+                
+                //4th path
+                ctx.beginPath();
+                ctx.moveTo(120,200);
+                ctx.lineTo(120,65);
+                ctx.strokeStyle= 'black';
+                ctx.stroke();
+				
+				
+                
+                //5th path
+                ctx.beginPath();
+                ctx.moveTo(250,200);
+                ctx.lineTo(250,65);
+                ctx.strokeStyle= 'black';
+                ctx.stroke();
+				
+
+                ctx.beginPath();
+                ctx.moveTo(250,200);
+                ctx.lineTo(300,200);
+                ctx.strokestyle= 'black';
+                ctx.stroke();
+
+                //6th path
+                ctx.beginPath();
+                ctx.moveTo(75,200);
+                ctx.lineTo(180,200);
+                ctx.lineTo(180,255)
+                ctx.lineTo(250,255)
+                ctx.lineTo(255,660)
+                ctx.strokeStyle= 'black';
+                ctx.stroke();
+                
+                //7th path
+                ctx.beginPath();
+                ctx.moveTo(0,165);
+                ctx.lineTo(75,165);
+                ctx.strokeStyle= 'black';
+                ctx.stroke();
+
+                //8th path
+                ctx.beginPath();
+                ctx.moveTo(0,255);
+                ctx.lineTo(120,255);
+                ctx.strokeStyle= 'black';
+                ctx.stroke();
+
+                //9th path
+                ctx.beginPath();
+                ctx.moveTo(320,65);
+                ctx.lineTo(390,65)
+                ctx.strokeStyle= 'black';
+                ctx.stroke();
+
+                //10th path
+                ctx.beginPath();
+                ctx.moveTo(320,170);
+                ctx.lineTo(390,170)
+                ctx.strokeStyle= 'black';
+                ctx.stroke();
+
+                //11th path
+                ctx.beginPath();
+                ctx.moveTo(300,200);
+                ctx.lineTo(300,255)
+                ctx.strokeStyle= 'black';
+                ctx.stroke();
+
+
+                
+            </script>
+			
+			<svg width="400" height="400">
+				<g>
+				<circle cx='20' cy='20' r='5' fill='red' stroke='black' stroke-width='3'/></circle>
+				<animateMotion path='M 170 0 V 100 H 200 V 25 H 275 V 100 H 300 V 150 H 275 V 175 H 300 V 275 H 250 V 225 H 200 V 150 H 150' dur='2s'repeatCount = '2'/>
+				</g>
+			</svg>
+			
+    </body>
+</html>
